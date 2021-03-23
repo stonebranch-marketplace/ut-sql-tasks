@@ -5,14 +5,17 @@
     "agentFieldsRestriction": "No Restriction",
     "agentType": "Any",
     "agentVar": null,
+    "alwaysCancelOnFinish": false,
+    "autoCleanup": false,
     "automaticOutputRetrievalFieldsRestriction": "No Restriction",
     "broadcastCluster": null,
     "broadcastClusterVar": null,
+    "commands": [],
     "createConsole": false,
     "credentialFieldsRestriction": "No Restriction",
     "credentials": null,
     "credentialsVar": null,
-    "description": "v1.20",
+    "description": "v1.21",
     "desktopInteract": false,
     "elevateUser": false,
     "environment": [],
@@ -22,6 +25,7 @@
     "exitCodeProcessingFieldsRestriction": "No Restriction",
     "exitCodeText": null,
     "exitCodes": "0",
+    "extension": "sql",
     "fields": [
         {
             "arrayNameTitle": null,
@@ -31,11 +35,14 @@
             "booleanYesValue": null,
             "choiceAllowEmpty": false,
             "choiceAllowMultiple": false,
+            "choiceDynamic": false,
+            "choiceFields": [],
             "choiceSortOption": "Sequence",
             "choices": [],
             "defaultListView": false,
             "fieldLength": null,
             "fieldMapping": "Text Field 1",
+            "fieldRestriction": "No Restriction",
             "fieldType": "Text",
             "fieldValue": null,
             "formColumnSpan": 1,
@@ -47,6 +54,8 @@
             "label": "Database Name",
             "name": "database",
             "noSpaceIfHidden": false,
+            "preserveOutputOnRerun": false,
+            "preserveValueIfHidden": false,
             "requireIfField": null,
             "requireIfFieldValue": null,
             "requireIfVisible": false,
@@ -54,7 +63,8 @@
             "sequence": 0,
             "showIfField": null,
             "showIfFieldValue": null,
-            "sysId": "75f7105cd58940339cda100950d703e3"
+            "sysId": "75f7105cd58940339cda100950d703e3",
+            "textType": "Plain"
         },
         {
             "arrayNameTitle": null,
@@ -64,13 +74,16 @@
             "booleanYesValue": null,
             "choiceAllowEmpty": false,
             "choiceAllowMultiple": false,
+            "choiceDynamic": false,
+            "choiceFields": [],
             "choiceSortOption": "Sequence",
             "choices": [],
             "defaultListView": false,
             "fieldLength": null,
             "fieldMapping": "Script Field 1",
+            "fieldRestriction": "No Restriction",
             "fieldType": "Script",
-            "fieldValue": "oracle_block",
+            "fieldValue": "oracle_block_country",
             "formColumnSpan": 1,
             "formEndRow": false,
             "formStartRow": false,
@@ -80,6 +93,8 @@
             "label": "Script",
             "name": "script",
             "noSpaceIfHidden": false,
+            "preserveOutputOnRerun": false,
+            "preserveValueIfHidden": false,
             "requireIfField": null,
             "requireIfFieldValue": null,
             "requireIfVisible": false,
@@ -87,7 +102,8 @@
             "sequence": 1,
             "showIfField": null,
             "showIfFieldValue": null,
-            "sysId": "1b37775fc741441bbcf56b158fb30acf"
+            "sysId": "1b37775fc741441bbcf56b158fb30acf",
+            "textType": "Plain"
         },
         {
             "arrayNameTitle": null,
@@ -97,6 +113,8 @@
             "booleanYesValue": null,
             "choiceAllowEmpty": false,
             "choiceAllowMultiple": false,
+            "choiceDynamic": false,
+            "choiceFields": [],
             "choiceSortOption": "Sequence",
             "choices": [
                 {
@@ -133,6 +151,7 @@
             "defaultListView": false,
             "fieldLength": null,
             "fieldMapping": "Choice Field 1",
+            "fieldRestriction": "No Restriction",
             "fieldType": "Choice",
             "fieldValue": "INFO",
             "formColumnSpan": 1,
@@ -144,6 +163,8 @@
             "label": "Loglevel",
             "name": "loglevel",
             "noSpaceIfHidden": false,
+            "preserveOutputOnRerun": false,
+            "preserveValueIfHidden": false,
             "requireIfField": null,
             "requireIfFieldValue": null,
             "requireIfVisible": false,
@@ -151,7 +172,8 @@
             "sequence": 2,
             "showIfField": null,
             "showIfFieldValue": null,
-            "sysId": "35be55fd217d40aca622974722d52058"
+            "sysId": "35be55fd217d40aca622974722d52058",
+            "textType": "Plain"
         },
         {
             "arrayNameTitle": null,
@@ -161,11 +183,14 @@
             "booleanYesValue": null,
             "choiceAllowEmpty": false,
             "choiceAllowMultiple": false,
+            "choiceDynamic": false,
+            "choiceFields": [],
             "choiceSortOption": "Sequence",
             "choices": [],
             "defaultListView": false,
             "fieldLength": null,
             "fieldMapping": "Text Field 2",
+            "fieldRestriction": "No Restriction",
             "fieldType": "Text",
             "fieldValue": null,
             "formColumnSpan": 1,
@@ -177,6 +202,8 @@
             "label": "Server",
             "name": "server",
             "noSpaceIfHidden": false,
+            "preserveOutputOnRerun": false,
+            "preserveValueIfHidden": false,
             "requireIfField": null,
             "requireIfFieldValue": null,
             "requireIfVisible": false,
@@ -184,7 +211,8 @@
             "sequence": 3,
             "showIfField": null,
             "showIfFieldValue": null,
-            "sysId": "d4b0b4d7233d448eb506c5e99942cf36"
+            "sysId": "d4b0b4d7233d448eb506c5e99942cf36",
+            "textType": "Plain"
         },
         {
             "arrayNameTitle": null,
@@ -194,11 +222,14 @@
             "booleanYesValue": null,
             "choiceAllowEmpty": false,
             "choiceAllowMultiple": false,
+            "choiceDynamic": false,
+            "choiceFields": [],
             "choiceSortOption": "Sequence",
             "choices": [],
             "defaultListView": false,
             "fieldLength": null,
             "fieldMapping": "Text Field 3",
+            "fieldRestriction": "No Restriction",
             "fieldType": "Text",
             "fieldValue": null,
             "formColumnSpan": 1,
@@ -210,6 +241,8 @@
             "label": "Database Port",
             "name": "database_port",
             "noSpaceIfHidden": false,
+            "preserveOutputOnRerun": false,
+            "preserveValueIfHidden": false,
             "requireIfField": null,
             "requireIfFieldValue": null,
             "requireIfVisible": false,
@@ -217,7 +250,8 @@
             "sequence": 4,
             "showIfField": null,
             "showIfFieldValue": null,
-            "sysId": "bc3fc741aa7a4595b93d8f3bbe25083a"
+            "sysId": "bc3fc741aa7a4595b93d8f3bbe25083a",
+            "textType": "Plain"
         },
         {
             "arrayNameTitle": null,
@@ -227,11 +261,14 @@
             "booleanYesValue": null,
             "choiceAllowEmpty": false,
             "choiceAllowMultiple": false,
+            "choiceDynamic": false,
+            "choiceFields": [],
             "choiceSortOption": "Sequence",
             "choices": [],
             "defaultListView": false,
             "fieldLength": null,
             "fieldMapping": "Credential Field 1",
+            "fieldRestriction": "No Restriction",
             "fieldType": "Credential",
             "fieldValue": null,
             "formColumnSpan": 1,
@@ -243,6 +280,8 @@
             "label": "Database Credentials",
             "name": "credentials",
             "noSpaceIfHidden": false,
+            "preserveOutputOnRerun": false,
+            "preserveValueIfHidden": false,
             "requireIfField": null,
             "requireIfFieldValue": null,
             "requireIfVisible": false,
@@ -250,7 +289,8 @@
             "sequence": 5,
             "showIfField": null,
             "showIfFieldValue": null,
-            "sysId": "28da28f882044fbdab431009a5245d1c"
+            "sysId": "28da28f882044fbdab431009a5245d1c",
+            "textType": "Plain"
         },
         {
             "arrayNameTitle": null,
@@ -260,6 +300,8 @@
             "booleanYesValue": null,
             "choiceAllowEmpty": false,
             "choiceAllowMultiple": false,
+            "choiceDynamic": false,
+            "choiceFields": [],
             "choiceSortOption": "Sequence",
             "choices": [
                 {
@@ -290,6 +332,7 @@
             "defaultListView": false,
             "fieldLength": null,
             "fieldMapping": "Choice Field 2",
+            "fieldRestriction": "No Restriction",
             "fieldType": "Choice",
             "fieldValue": "ODBC Driver 17 for SQL Server",
             "formColumnSpan": 1,
@@ -301,6 +344,8 @@
             "label": "ODBC Drivername",
             "name": "odbc_drivername",
             "noSpaceIfHidden": false,
+            "preserveOutputOnRerun": false,
+            "preserveValueIfHidden": false,
             "requireIfField": null,
             "requireIfFieldValue": null,
             "requireIfVisible": false,
@@ -308,7 +353,8 @@
             "sequence": 6,
             "showIfField": "Choice Field 3",
             "showIfFieldValue": "mysql,sqlserver,postgresql",
-            "sysId": "c0437f5e3ea04a89b0dbe85e26f01f03"
+            "sysId": "c0437f5e3ea04a89b0dbe85e26f01f03",
+            "textType": "Plain"
         },
         {
             "arrayNameTitle": null,
@@ -318,11 +364,14 @@
             "booleanYesValue": null,
             "choiceAllowEmpty": false,
             "choiceAllowMultiple": false,
+            "choiceDynamic": false,
+            "choiceFields": [],
             "choiceSortOption": "Sequence",
             "choices": [],
             "defaultListView": false,
             "fieldLength": null,
             "fieldMapping": "Boolean Field 1",
+            "fieldRestriction": "No Restriction",
             "fieldType": "Boolean",
             "fieldValue": "false",
             "formColumnSpan": 1,
@@ -334,6 +383,8 @@
             "label": "Get Output",
             "name": "getoutput",
             "noSpaceIfHidden": false,
+            "preserveOutputOnRerun": false,
+            "preserveValueIfHidden": false,
             "requireIfField": null,
             "requireIfFieldValue": null,
             "requireIfVisible": false,
@@ -341,7 +392,8 @@
             "sequence": 7,
             "showIfField": null,
             "showIfFieldValue": null,
-            "sysId": "a64a995d425b44cea89b717c21669fa9"
+            "sysId": "a64a995d425b44cea89b717c21669fa9",
+            "textType": "Plain"
         },
         {
             "arrayNameTitle": null,
@@ -351,6 +403,8 @@
             "booleanYesValue": null,
             "choiceAllowEmpty": false,
             "choiceAllowMultiple": false,
+            "choiceDynamic": false,
+            "choiceFields": [],
             "choiceSortOption": "Sequence",
             "choices": [
                 {
@@ -388,6 +442,7 @@
             "defaultListView": false,
             "fieldLength": null,
             "fieldMapping": "Choice Field 3",
+            "fieldRestriction": "No Restriction",
             "fieldType": "Choice",
             "fieldValue": "oracle",
             "formColumnSpan": 1,
@@ -399,6 +454,8 @@
             "label": "Database Type",
             "name": "database_type",
             "noSpaceIfHidden": false,
+            "preserveOutputOnRerun": false,
+            "preserveValueIfHidden": false,
             "requireIfField": null,
             "requireIfFieldValue": null,
             "requireIfVisible": false,
@@ -406,7 +463,8 @@
             "sequence": 8,
             "showIfField": null,
             "showIfFieldValue": null,
-            "sysId": "d9d7d971376a40b8b0e58d841f610466"
+            "sysId": "d9d7d971376a40b8b0e58d841f610466",
+            "textType": "Plain"
         },
         {
             "arrayNameTitle": null,
@@ -416,6 +474,8 @@
             "booleanYesValue": null,
             "choiceAllowEmpty": false,
             "choiceAllowMultiple": false,
+            "choiceDynamic": false,
+            "choiceFields": [],
             "choiceSortOption": "Sequence",
             "choices": [
                 {
@@ -434,6 +494,7 @@
             "defaultListView": false,
             "fieldLength": null,
             "fieldMapping": "Choice Field 4",
+            "fieldRestriction": "No Restriction",
             "fieldType": "Choice",
             "fieldValue": "sqlscript",
             "formColumnSpan": 1,
@@ -445,6 +506,8 @@
             "label": "Script Type",
             "name": "scripttype",
             "noSpaceIfHidden": false,
+            "preserveOutputOnRerun": false,
+            "preserveValueIfHidden": false,
             "requireIfField": null,
             "requireIfFieldValue": null,
             "requireIfVisible": false,
@@ -452,7 +515,8 @@
             "sequence": 9,
             "showIfField": "Choice Field 3",
             "showIfFieldValue": "oracle",
-            "sysId": "c4d89c9c1ea64bcc92ff23e8d7f8515f"
+            "sysId": "c4d89c9c1ea64bcc92ff23e8d7f8515f",
+            "textType": "Plain"
         },
         {
             "arrayNameTitle": null,
@@ -462,6 +526,8 @@
             "booleanYesValue": null,
             "choiceAllowEmpty": false,
             "choiceAllowMultiple": false,
+            "choiceDynamic": false,
+            "choiceFields": [],
             "choiceSortOption": "Sequence",
             "choices": [
                 {
@@ -489,6 +555,7 @@
             "defaultListView": false,
             "fieldLength": null,
             "fieldMapping": "Choice Field 5",
+            "fieldRestriction": "No Restriction",
             "fieldType": "Choice",
             "fieldValue": "sqlserver",
             "formColumnSpan": 1,
@@ -500,6 +567,8 @@
             "label": "Authentication",
             "name": "authentication",
             "noSpaceIfHidden": false,
+            "preserveOutputOnRerun": false,
+            "preserveValueIfHidden": false,
             "requireIfField": null,
             "requireIfFieldValue": null,
             "requireIfVisible": false,
@@ -507,7 +576,8 @@
             "sequence": 10,
             "showIfField": "Choice Field 3",
             "showIfFieldValue": "sqlserver",
-            "sysId": "f78805378c95434e9f01100fe2b7846c"
+            "sysId": "f78805378c95434e9f01100fe2b7846c",
+            "textType": "Plain"
         },
         {
             "arrayNameTitle": null,
@@ -517,6 +587,8 @@
             "booleanYesValue": null,
             "choiceAllowEmpty": false,
             "choiceAllowMultiple": false,
+            "choiceDynamic": false,
+            "choiceFields": [],
             "choiceSortOption": "Sequence",
             "choices": [
                 {
@@ -571,6 +643,7 @@
             "defaultListView": false,
             "fieldLength": null,
             "fieldMapping": "Choice Field 7",
+            "fieldRestriction": "No Restriction",
             "fieldType": "Choice",
             "fieldValue": "cx_Oracle.SYSDBA",
             "formColumnSpan": 1,
@@ -582,6 +655,8 @@
             "label": "Mode",
             "name": "connection_mode",
             "noSpaceIfHidden": false,
+            "preserveOutputOnRerun": false,
+            "preserveValueIfHidden": false,
             "requireIfField": null,
             "requireIfFieldValue": null,
             "requireIfVisible": false,
@@ -589,7 +664,8 @@
             "sequence": 11,
             "showIfField": "Choice Field 3",
             "showIfFieldValue": "oracle",
-            "sysId": "3ec3d9a21cce401786944816e96762cb"
+            "sysId": "3ec3d9a21cce401786944816e96762cb",
+            "textType": "Plain"
         },
         {
             "arrayNameTitle": null,
@@ -599,6 +675,8 @@
             "booleanYesValue": null,
             "choiceAllowEmpty": false,
             "choiceAllowMultiple": false,
+            "choiceDynamic": false,
+            "choiceFields": [],
             "choiceSortOption": "Sequence",
             "choices": [
                 {
@@ -633,6 +711,7 @@
             "defaultListView": false,
             "fieldLength": null,
             "fieldMapping": "Choice Field 6",
+            "fieldRestriction": "No Restriction",
             "fieldType": "Choice",
             "fieldValue": "\";\"",
             "formColumnSpan": 1,
@@ -644,6 +723,8 @@
             "label": "Column Separator",
             "name": "colsep",
             "noSpaceIfHidden": false,
+            "preserveOutputOnRerun": false,
+            "preserveValueIfHidden": false,
             "requireIfField": null,
             "requireIfFieldValue": null,
             "requireIfVisible": false,
@@ -651,11 +732,18 @@
             "sequence": 12,
             "showIfField": "Choice Field 3",
             "showIfFieldValue": "hana",
-            "sysId": "37ab3fc4bfcb4ea89704793c8682fdab"
+            "sysId": "37ab3fc4bfcb4ea89704793c8682fdab",
+            "textType": "Plain"
         }
     ],
+    "logLevel": "Inherited",
     "name": "SQL",
+    "outputConditionOperator": "=",
+    "outputConditionStrategy": "Match Any",
+    "outputConditionValue": null,
+    "outputContentType": null,
     "outputFailureOnly": false,
+    "outputPathExpression": null,
     "outputReturnFile": null,
     "outputReturnNline": "100",
     "outputReturnSline": "1",
@@ -665,9 +753,10 @@
     "runtimeDir": null,
     "script": null,
     "scriptTypeWindows": "uapy",
-    "scriptUnix": "#!/opt/universal/python3.6/bin/python3\n# !/usr/bin/python\n###################################################\n#\n#    Name: ut_execute_dbscript.py\n#\n#    Purpose: execute an oracle, sqlserver db script\n#\n#\n#    Prerequisites:\n#     - Universal Agent for Windows/Linux\n#     - Python 3.7.x and higher\n#     - ODBC driver (https://docs.microsoft.com/de-de/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server?view=sql-server-2017)\n#     - yum -y install gcc gcc-c++ kernel-devel for pyodbc\n#     - requires on windows oracle instant client Version 18.3.0.0.0 http://www.oracle.com/technetwork/topics/winx64soft-089540.html\n#     - requires on windows Visual Studio VS 2013 https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads#bookmark-vs2013\n#     - check the odbc drivername in /etc/odbcinst.ini\n#     - Requires the Python modules via pip\n#     - pip install pyodbc\n#     - pip install datetime\n#     - pip install argparse\n#     - pip install logging\n#\n#     Version History:\n#\n#     1.0  Nils Buer    2018-09-05  initial version\n#     1.1  Nils Buer    2019-09-12  windows authentication added\n#     1.3  Nils Buer    2019-09-16  names for authentication adjusted\n#     1.4  Nils Buer    2019-09-17  SET NOCOUNT ON added\n#     1.5  A.Saglam     2020-05-18  Update for Oracle call, corrections, added mode\n#     1.6  A.Saglam     2020-05-19  Added commit call to oracle sql if no output\n#     1.7  A.Saglam     2020-10-23  activated Postgresql\n#     1.8   ASA NBU     2020-10-26  merged SAP HANA into here\n#     1.9   ASA NBU     2020-10-26  bugfix\n#     1.10  ASA NBU     2020-10-27  bugfix\n#     1.11  ASA NBU     2020-10-27  bugfix\n#     1.12  ASA NBU     2020-10-27  bugfix\n#     1.13  ASA NBU     2020-10-27  bugfix\n#     1.14  ASA NBU     2020-10-29  bugfix\n#     1.15  ASA NBU     2020-10-29  Mode added for function execute_oracle_block_plsql\n#     1.16  ASA NBU     2020-11-02  Authentication for oracle removed in choice\n#     1.17  ASA         2020-11-12  conditional import\n#     1.18  NBU         2020-12-18  SAP bugfix\n#     1.19  NBU, AS     2020-12-21  NO COUNT removed\n#     1.20  NBU         2021-01-11  debug print (noCount + script_data) outcommented\n####################################################\nimport logging\nimport sys\n# import cx_Oracle\n# import pyodbc\n# from hdbcli import dbapi\n\ngl_version = \"1.20\"\ngl_variable_prefix = \"var\"\n#\n\n# -- logging settings DEBUG, INFO, WARNING, ERROR, CRITICAL\nlogging.basicConfig(level=\"${ops_var_loglevel}\",\n                    format=' %(asctime)s - %(levelname)s - %(message)s')\n\ndef global_imports():\n    if \"${ops_var_database_type}\" == \"oracle\":\n        global cx_Oracle\n        import cx_Oracle\n    elif \"${ops_var_database_type}\" in \"mysql,postgresql,sqlserver\":\n        global pyodbc\n        import pyodbc\n    elif \"${ops_var_database_type}\" == \"hana\":\n        global dbapi\n        from hdbcli import dbapi\n    pass\n\n# -- Main Logic Function\ndef main():\n    \"\"\"calls the required functions to run the stored procedures\"\"\"\n    global_imports()\n    print_variables()\n    stored_procedure_type()\n\n\ndef print_variables_x():\n    logging.info(\" Executing version \" + gl_version)\n    logging.info(\" Server: ${ops_var_server}\")\n    logging.info(\" database: ${ops_var_database}\")\n    logging.info(\n        \" database port e.g. 1521 oracle, 3306 mysql, 1433 mssql: ${ops_var_database_port}\")\n    # logging.info(\" username: ${_credentialUser('${ops_var_credentials}')}\")\n    # logging.info(\" password: ${_credentialPwd('${ops_var_credentials}')}\")\n    logging.info(\" odbc driver name: ${ops_var_odbc_drivername}\")\n    logging.info(\" schema: ${ops_var_schema}\")\n    logging.info(\" Output processing: ${ops_var_getoutput}\")\n    logging.info(\" Script to execute: ${ops_var_script}\")\n\n\ndef print_variables():\n    logging.info(\"Python version <<< \" + sys.version + \" >>>\")\n    logging.info(\"Executing task version \" + gl_version + \" with the following \"\n                                                          \"parameters\")\n    print_defined_variables(gl_variable_prefix)\n\n\ndef print_defined_variables(variable_prefix):\n    all_variables = r\"${_scope}\"\n    separate_variables = [variable for variable in all_variables.split(', ') if\n                          \"ops_\" + variable_prefix in variable]\n    logging.info(str(separate_variables).replace(\", \", \",\\n\"))\n\n\ndef stored_procedure_type():\n    logging.info(\" Connecting to ${ops_var_database_type} ...\")\n    if \"${ops_var_database_type}\" == \"oracle\":\n        if \"${ops_var_scripttype}\" == \"sqlscript\":\n            execute_oracle_block_sql()\n        elif \"${ops_var_scripttype}\" == \"plsqlblock\":\n            execute_oracle_block_plsql()\n        else:\n            logging.info(\"selections needs to be one of: sqlscript, plsqlblock\")\n            exit(1)\n    elif \"${ops_var_database_type}\" == \"mysql\":\n        execute_mysql_block()\n    elif \"${ops_var_database_type}\" == \"postgresql\":\n        execute_postgresql_block()\n    elif \"${ops_var_database_type}\" == \"sqlserver\":\n        execute_sqlserver_block()\n    elif \"${ops_var_database_type}\" == \"hana\":\n        execute_sap_hana_block()\n    else:\n        logging.error(\n            \"ERROR >>  database_type: ${ops_var_database_type} needs to be one of: oracle, mysql, sqlserver\")\n        exit(1)\n\n\ndef execute_oracle_block_plsql():\n    dsn_tns = cx_Oracle.makedsn('${ops_var_server}', '${ops_var_database_port}',\n                                service_name='${ops_var_database}')  # if needed, place an 'r' before any parameter in order to address any special character such as '\\'.\n    logging.info(\"DSN:: %s\", str(dsn_tns))\n    try:\n        connection_mode = int(${ops_var_connection_mode})\n    except TypeError:\n        connection_mode = 0\n    if not connection_mode:\n        cnxn = cx_Oracle.connect(\n            user=r\"${_credentialUser('${ops_var_credentials}')}\",\n            password=\"${_credentialPwd('${ops_var_credentials}')}\",\n            dsn=dsn_tns)  # if needed, place an 'r' before any parameter in order to address any special character such as '\\'. For example, if your user name contains '\\', you'll need to place 'r' before the user name: user=r'User Name'\n    else:\n        cnxn = cx_Oracle.connect(\n            user=r\"${_credentialUser('${ops_var_credentials}')}\",\n            password=\"${_credentialPwd('${ops_var_credentials}')}\",\n            dsn=dsn_tns,\n            mode=connection_mode)  # if needed, place an 'r' before any parameter in order to address any special character such as '\\'. For example, if your user name contains '\\', you'll need to place 'r' before the user name: user=r'User Name'\n    cursor = cnxn.cursor()\n    if \"${ops_var_getoutput}\" == \"true\":\n        cursor.callproc(\"dbms_output.enable\")\n    else:\n        logging.info(\" No output processing\")\n\n    script = open(r'''${_scriptPath('${ops_var_script}')}''', 'r')\n    script_data = script.read()\n\n    try:\n        cursor.execute(script_data)\n        logging.info(\" script: ${ops_var_script} executed\")\n    except cx_Oracle.DatabaseError as err:\n        logging.error('%s' % err)\n        exit(1)\n\n    if \"${ops_var_getoutput}\" == \"true\":\n        statusVar = cursor.var(cx_Oracle.NUMBER)\n        lineVar = cursor.var(cx_Oracle.STRING)\n        while True:\n            cursor.callproc(\"dbms_output.get_line\", (lineVar, statusVar))\n            if statusVar.getvalue() != 0:\n                break\n            print(lineVar.getvalue())\n\n    cursor.close()\n    cnxn.close()\n\n\ndef execute_oracle_block_sql():\n    try:\n        dsn_tns = cx_Oracle.makedsn('${ops_var_server}',\n                                    '${ops_var_database_port}',\n                                    service_name='${ops_var_database}')  # if needed, place an 'r' before any parameter in order to address any special character such as '\\'.\n        logging.info(\"DSN:: %s\", str(dsn_tns))\n        try:\n            connection_mode = int(${ops_var_connection_mode})\n        except TypeError:\n            connection_mode = 0\n        if not connection_mode:\n            cnxn = cx_Oracle.connect(\n                user=r\"${_credentialUser('${ops_var_credentials}')}\",\n                password=\"${_credentialPwd('${ops_var_credentials}')}\",\n                dsn=dsn_tns)  # if needed, place an 'r' before any parameter in order to address any special character such as '\\'. For example, if your user name contains '\\', you'll need to place 'r' before the user name: user=r'User Name'\n        else:\n            cnxn = cx_Oracle.connect(\n                user=r\"${_credentialUser('${ops_var_credentials}')}\",\n                password=\"${_credentialPwd('${ops_var_credentials}')}\",\n                dsn=dsn_tns,\n                mode=connection_mode)  # if needed, place an 'r' before any parameter in order to address any special character such as '\\'. For example, if your user name contains '\\', you'll need to place 'r' before the user name: user=r'User Name'\n        cursor = cnxn.cursor()\n        if \"${ops_var_getoutput}\" == \"true\":\n            cursor.callproc(\"dbms_output.enable\")\n        else:\n            logging.info(\" No output processing\")\n\n        script = open(r'''${_scriptPath('${ops_var_script}')}''', 'r')\n        script_data = script.read()\n    except Exception as exception:\n        logging.error('%s' % exception)\n        exit(1)\n\n    try:\n        cursor.execute(script_data)\n        logging.info(\" script: ${ops_var_script} executed\")\n    except cx_Oracle.DatabaseError as err:\n        logging.error('%s' % err)\n        exit(1)\n\n    # print result\n    if \"${ops_var_getoutput}\" == \"true\":\n        while True:\n            row = cursor.fetchone()\n            if not row:\n                break\n            print(row)\n    else:\n        logging.info(\" No output processing\")\n        cnxn.commit()\n    logging.info(\"After Output Processing\")\n    cursor.close()\n    cnxn.close()\n\n\ndef execute_sqlserver_block():\n    try:\n        if \"${ops_var_authentication}\" == \"windows\":\n            cnxn = pyodbc.connect(\n                'DRIVER={${ops_var_odbc_drivername}};'\n                'SERVER=${ops_var_server};'\n                'DATABASE=${ops_var_database};'\n                'trusted_connection=yes')\n        elif \"${ops_var_authentication}\" == \"sqlserver\":\n            cnxn = pyodbc.connect(\"DRIVER={${ops_var_odbc_drivername}};\"\n                                  \"SERVER=${ops_var_server};\"\n                                  \"DATABASE=${ops_var_database};\"\n                                  \"UID=${_credentialUser('${ops_var_credentials}')};\"\n                                  \"PWD=${_credentialPwd('${ops_var_credentials}')}\")\n\n\n        else:\n            logging.error(\n                \"ERROR >> authentication: needs to be one of: windows, sqlserver\")\n        cursor = cnxn.cursor()\n        script = open(r'''${_scriptPath('${ops_var_script}')}''', 'r')\n        script_data = script.read()\n        noCount = \"\"\" SET NOCOUNT ON; \"\"\"\n        # print (noCount + script_data)\n        #cursor.execute(noCount + script_data)\n        cursor.execute(script_data)\n        logging.info(\" script: ${ops_var_script} executed\")\n    except pyodbc.Error as err:\n        logging.error('%s' % err)\n        exit(1)\n    except Exception as exception:\n        logging.error('%s' % exception)\n        exit(1)\n    # print result\n    if \"${ops_var_getoutput}\" == \"true\":\n        try:\n            row = cursor.fetchone()\n            while row is not None:\n                print(row)\n                row = cursor.fetchone()\n        except pyodbc.ProgrammingError as e:\n            logging.warning(\" No output message: \" + str(e))\n    # Close and delete cursor\n    cnxn.commit()\n    cursor.close()\n    # Close Connection\n    cnxn.close()\n\n\ndef execute_mysql_block():\n    try:\n        cnxn = pyodbc.connect(\"DRIVER={${ops_var_odbc_drivername}};\"\n                              \"SERVER=${ops_var_server};\"\n                              \"DATABASE=${ops_var_database};\"\n                              \"UID=${_credentialUser('${ops_var_credentials}')};\"\n                              \"PWD=${_credentialPwd('${ops_var_credentials}')};\"\n                              \"PORT=${ops_var_database_port};\"\n                              \"SslMode=none;\"\n                              )\n        cursor = cnxn.cursor()\n        script = open(r'''${_scriptPath('${ops_var_script}')}''', 'r')\n        script_data = script.read()\n        # noCount = \"\"\" SET NOCOUNT ON; \"\"\"\n        cursor.execute(script_data)\n        logging.info(\" script: ${ops_var_script} executed\")\n        cnxn.commit()\n    except pyodbc.Error as err:\n        logging.error('%s' % err)\n        exit(1)\n    except Exception as exception:\n        logging.error('%s' % exception)\n        exit(1)\n    # print result\n    if \"${ops_var_getoutput}\" == \"true\":\n        try:\n            row = cursor.fetchone()\n            while row is not None:\n                print(row)\n                row = cursor.fetchone()\n        except pyodbc.ProgrammingError as e:\n            logging.warning(\" No output message: \" + str(e))\n    # Close and delete cursor\n    cursor.close()\n    # Close Connection\n    cnxn.close()\n\n\ndef execute_postgresql_block():\n    try:\n        cnxn = pyodbc.connect(\"DRIVER={${ops_var_odbc_drivername}};\"\n                              \"SERVER=${ops_var_server};\"\n                              \"DATABASE=${ops_var_database};\"\n                              \"UID=${_credentialUser('${ops_var_credentials}')};\"\n                              \"PWD=${_credentialPwd('${ops_var_credentials}')};\"\n                              \"PORT=${ops_var_database_port};\")\n        cursor = cnxn.cursor()\n        script = open(r'''${_scriptPath('${ops_var_script}')}''', 'r')\n        script_data = script.read()\n        # noCount = \"\"\" SET NOCOUNT ON; \"\"\"\n        cursor.execute(script_data)\n        logging.info(\" script: ${ops_var_script} executed\")\n        cnxn.commit()\n    except pyodbc.Error as err:\n        logging.error('%s' % err)\n        exit(1)\n    except Exception as exception:\n        logging.error('%s' % exception)\n        exit(1)\n    # print result\n    if \"${ops_var_getoutput}\" == \"true\":\n        try:\n            row = cursor.fetchone()\n            while row is not None:\n                print(row)\n                row = cursor.fetchone()\n        except pyodbc.ProgrammingError as e:\n            logging.warning(\" No output message: \" + str(e))\n    # Close and delete cursor\n    cursor.close()\n    # Close Connection\n    cnxn.close()\n\n\ndef execute_sap_hana_block():\n    # Initialize your connection\n    conn = dbapi.connect(\n        address='${ops_var_server}',\n        port='${ops_var_database_port}',\n        user=\"${_credentialUser('${ops_var_credentials}')}\",\n        password=\"${_credentialPwd('${ops_var_credentials}')}\"\n    )\n    # If no errors, print connected\n    logging.info(f\"Connection Status is: {conn.isconnected()}\")\n    script = open(r'''${_scriptPath('${ops_var_script}')}''', 'r')\n    script_data = script.read()\n    cursor = conn.cursor()\n    # sql_command = \"SELECT * FROM SYS.RS_TABLES_;\"\n    try:\n        column_separator = str(${ops_var_colsep})\n    except TypeError:\n        column_separator = \",\"\n\n    cursor = conn.cursor()\n    # sql_command = \"SELECT * FROM SYS.RS_TABLES_;\"\n    try:\n        cursor.execute(script_data)\n        #for row in cursor:\n        #    print(row)\n    except Exception as exception:\n        logging.error(\"Error message: \" + str(exception))\n        exit(1)\n    try:\n        rows = cursor.fetchall()\n        for row in rows:\n            for i, col in enumerate(row):\n                # print (\"%s\" % col, end=\" \")\n                print(f\"{col}\", end=column_separator if i != len(row) - 1 else \"\")\n            print(\" \")\n    except Exception as exception:\n        logging.warning(\" No output message: \" + str(exception))\n    cursor.close()\n    conn.close()\n    pass\n\n\n# --\nif __name__ == '__main__':\n    main()\n",
-    "scriptWindows": "#!/opt/universal/python3.6/bin/python3\n# !/usr/bin/python\n###################################################\n#\n#    Name: ut_execute_dbscript.py\n#\n#    Purpose: execute an oracle, sqlserver db script\n#\n#\n#    Prerequisites:\n#     - Universal Agent for Windows/Linux\n#     - Python 3.7.x and higher\n#     - ODBC driver (https://docs.microsoft.com/de-de/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server?view=sql-server-2017)\n#     - yum -y install gcc gcc-c++ kernel-devel for pyodbc\n#     - requires on windows oracle instant client Version 18.3.0.0.0 http://www.oracle.com/technetwork/topics/winx64soft-089540.html\n#     - requires on windows Visual Studio VS 2013 https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads#bookmark-vs2013\n#     - check the odbc drivername in /etc/odbcinst.ini\n#     - Requires the Python modules via pip\n#     - pip install pyodbc\n#     - pip install datetime\n#     - pip install argparse\n#     - pip install logging\n#\n#     Version History:\n#\n#     1.0  Nils Buer    2018-09-05  initial version\n#     1.1  Nils Buer    2019-09-12  windows authentication added\n#     1.3  Nils Buer    2019-09-16  names for authentication adjusted\n#     1.4  Nils Buer    2019-09-17  SET NOCOUNT ON added\n#     1.5  A.Saglam     2020-05-18  Update for Oracle call, corrections, added mode\n#     1.6  A.Saglam     2020-05-19  Added commit call to oracle sql if no output\n#     1.7  A.Saglam     2020-10-23  activated Postgresql\n#     1.8   ASA NBU     2020-10-26  merged SAP HANA into here\n#     1.9   ASA NBU     2020-10-26  bugfix\n#     1.10  ASA NBU     2020-10-27  bugfix\n#     1.11  ASA NBU     2020-10-27  bugfix\n#     1.12  ASA NBU     2020-10-27  bugfix\n#     1.13  ASA NBU     2020-10-27  bugfix\n#     1.14  ASA NBU     2020-10-29  bugfix\n#     1.15  ASA NBU     2020-10-29  Mode added for function execute_oracle_block_plsql\n#     1.16  ASA NBU     2020-11-02  Authentication for oracle removed in choice\n#     1.17  ASA         2020-11-12  conditional import\n#     1.18  NBU         2020-12-18  SAP bugfix\n#     1.19  NBU, AS     2020-12-21  NO COUNT removed\n#     1.20  NBU         2021-01-11  debug print (noCount + script_data) outcommented\n####################################################\nimport logging\nimport sys\n# import cx_Oracle\n# import pyodbc\n# from hdbcli import dbapi\n\ngl_version = \"1.20\"\ngl_variable_prefix = \"var\"\n#\n\n# -- logging settings DEBUG, INFO, WARNING, ERROR, CRITICAL\nlogging.basicConfig(level=\"${ops_var_loglevel}\",\n                    format=' %(asctime)s - %(levelname)s - %(message)s')\n\ndef global_imports():\n    if \"${ops_var_database_type}\" == \"oracle\":\n        global cx_Oracle\n        import cx_Oracle\n    elif \"${ops_var_database_type}\" in \"mysql,postgresql,sqlserver\":\n        global pyodbc\n        import pyodbc\n    elif \"${ops_var_database_type}\" == \"hana\":\n        global dbapi\n        from hdbcli import dbapi\n    pass\n\n# -- Main Logic Function\ndef main():\n    \"\"\"calls the required functions to run the stored procedures\"\"\"\n    global_imports()\n    print_variables()\n    stored_procedure_type()\n\n\ndef print_variables_x():\n    logging.info(\" Executing version \" + gl_version)\n    logging.info(\" Server: ${ops_var_server}\")\n    logging.info(\" database: ${ops_var_database}\")\n    logging.info(\n        \" database port e.g. 1521 oracle, 3306 mysql, 1433 mssql: ${ops_var_database_port}\")\n    # logging.info(\" username: ${_credentialUser('${ops_var_credentials}')}\")\n    # logging.info(\" password: ${_credentialPwd('${ops_var_credentials}')}\")\n    logging.info(\" odbc driver name: ${ops_var_odbc_drivername}\")\n    logging.info(\" schema: ${ops_var_schema}\")\n    logging.info(\" Output processing: ${ops_var_getoutput}\")\n    logging.info(\" Script to execute: ${ops_var_script}\")\n\n\ndef print_variables():\n    logging.info(\"Python version <<< \" + sys.version + \" >>>\")\n    logging.info(\"Executing task version \" + gl_version + \" with the following \"\n                                                          \"parameters\")\n    print_defined_variables(gl_variable_prefix)\n\n\ndef print_defined_variables(variable_prefix):\n    all_variables = r\"${_scope}\"\n    separate_variables = [variable for variable in all_variables.split(', ') if\n                          \"ops_\" + variable_prefix in variable]\n    logging.info(str(separate_variables).replace(\", \", \",\\n\"))\n\n\ndef stored_procedure_type():\n    logging.info(\" Connecting to ${ops_var_database_type} ...\")\n    if \"${ops_var_database_type}\" == \"oracle\":\n        if \"${ops_var_scripttype}\" == \"sqlscript\":\n            execute_oracle_block_sql()\n        elif \"${ops_var_scripttype}\" == \"plsqlblock\":\n            execute_oracle_block_plsql()\n        else:\n            logging.info(\"selections needs to be one of: sqlscript, plsqlblock\")\n            exit(1)\n    elif \"${ops_var_database_type}\" == \"mysql\":\n        execute_mysql_block()\n    elif \"${ops_var_database_type}\" == \"postgresql\":\n        execute_postgresql_block()\n    elif \"${ops_var_database_type}\" == \"sqlserver\":\n        execute_sqlserver_block()\n    elif \"${ops_var_database_type}\" == \"hana\":\n        execute_sap_hana_block()\n    else:\n        logging.error(\n            \"ERROR >>  database_type: ${ops_var_database_type} needs to be one of: oracle, mysql, sqlserver\")\n        exit(1)\n\n\ndef execute_oracle_block_plsql():\n    dsn_tns = cx_Oracle.makedsn('${ops_var_server}', '${ops_var_database_port}',\n                                service_name='${ops_var_database}')  # if needed, place an 'r' before any parameter in order to address any special character such as '\\'.\n    logging.info(\"DSN:: %s\", str(dsn_tns))\n    try:\n        connection_mode = int(${ops_var_connection_mode})\n    except TypeError:\n        connection_mode = 0\n    if not connection_mode:\n        cnxn = cx_Oracle.connect(\n            user=r\"${_credentialUser('${ops_var_credentials}')}\",\n            password=\"${_credentialPwd('${ops_var_credentials}')}\",\n            dsn=dsn_tns)  # if needed, place an 'r' before any parameter in order to address any special character such as '\\'. For example, if your user name contains '\\', you'll need to place 'r' before the user name: user=r'User Name'\n    else:\n        cnxn = cx_Oracle.connect(\n            user=r\"${_credentialUser('${ops_var_credentials}')}\",\n            password=\"${_credentialPwd('${ops_var_credentials}')}\",\n            dsn=dsn_tns,\n            mode=connection_mode)  # if needed, place an 'r' before any parameter in order to address any special character such as '\\'. For example, if your user name contains '\\', you'll need to place 'r' before the user name: user=r'User Name'\n    cursor = cnxn.cursor()\n    if \"${ops_var_getoutput}\" == \"true\":\n        cursor.callproc(\"dbms_output.enable\")\n    else:\n        logging.info(\" No output processing\")\n\n    script = open(r'''${_scriptPath('${ops_var_script}')}''', 'r')\n    script_data = script.read()\n\n    try:\n        cursor.execute(script_data)\n        logging.info(\" script: ${ops_var_script} executed\")\n    except cx_Oracle.DatabaseError as err:\n        logging.error('%s' % err)\n        exit(1)\n\n    if \"${ops_var_getoutput}\" == \"true\":\n        statusVar = cursor.var(cx_Oracle.NUMBER)\n        lineVar = cursor.var(cx_Oracle.STRING)\n        while True:\n            cursor.callproc(\"dbms_output.get_line\", (lineVar, statusVar))\n            if statusVar.getvalue() != 0:\n                break\n            print(lineVar.getvalue())\n\n    cursor.close()\n    cnxn.close()\n\n\ndef execute_oracle_block_sql():\n    try:\n        dsn_tns = cx_Oracle.makedsn('${ops_var_server}',\n                                    '${ops_var_database_port}',\n                                    service_name='${ops_var_database}')  # if needed, place an 'r' before any parameter in order to address any special character such as '\\'.\n        logging.info(\"DSN:: %s\", str(dsn_tns))\n        try:\n            connection_mode = int(${ops_var_connection_mode})\n        except TypeError:\n            connection_mode = 0\n        if not connection_mode:\n            cnxn = cx_Oracle.connect(\n                user=r\"${_credentialUser('${ops_var_credentials}')}\",\n                password=\"${_credentialPwd('${ops_var_credentials}')}\",\n                dsn=dsn_tns)  # if needed, place an 'r' before any parameter in order to address any special character such as '\\'. For example, if your user name contains '\\', you'll need to place 'r' before the user name: user=r'User Name'\n        else:\n            cnxn = cx_Oracle.connect(\n                user=r\"${_credentialUser('${ops_var_credentials}')}\",\n                password=\"${_credentialPwd('${ops_var_credentials}')}\",\n                dsn=dsn_tns,\n                mode=connection_mode)  # if needed, place an 'r' before any parameter in order to address any special character such as '\\'. For example, if your user name contains '\\', you'll need to place 'r' before the user name: user=r'User Name'\n        cursor = cnxn.cursor()\n        if \"${ops_var_getoutput}\" == \"true\":\n            cursor.callproc(\"dbms_output.enable\")\n        else:\n            logging.info(\" No output processing\")\n\n        script = open(r'''${_scriptPath('${ops_var_script}')}''', 'r')\n        script_data = script.read()\n    except Exception as exception:\n        logging.error('%s' % exception)\n        exit(1)\n\n    try:\n        cursor.execute(script_data)\n        logging.info(\" script: ${ops_var_script} executed\")\n    except cx_Oracle.DatabaseError as err:\n        logging.error('%s' % err)\n        exit(1)\n\n    # print result\n    if \"${ops_var_getoutput}\" == \"true\":\n        while True:\n            row = cursor.fetchone()\n            if not row:\n                break\n            print(row)\n    else:\n        logging.info(\" No output processing\")\n        cnxn.commit()\n    logging.info(\"After Output Processing\")\n    cursor.close()\n    cnxn.close()\n\n\ndef execute_sqlserver_block():\n    try:\n        if \"${ops_var_authentication}\" == \"windows\":\n            cnxn = pyodbc.connect(\n                'DRIVER={${ops_var_odbc_drivername}};'\n                'SERVER=${ops_var_server};'\n                'DATABASE=${ops_var_database};'\n                'trusted_connection=yes')\n        elif \"${ops_var_authentication}\" == \"sqlserver\":\n            cnxn = pyodbc.connect(\"DRIVER={${ops_var_odbc_drivername}};\"\n                                  \"SERVER=${ops_var_server};\"\n                                  \"DATABASE=${ops_var_database};\"\n                                  \"UID=${_credentialUser('${ops_var_credentials}')};\"\n                                  \"PWD=${_credentialPwd('${ops_var_credentials}')}\")\n\n\n        else:\n            logging.error(\n                \"ERROR >> authentication: needs to be one of: windows, sqlserver\")\n        cursor = cnxn.cursor()\n        script = open(r'''${_scriptPath('${ops_var_script}')}''', 'r')\n        script_data = script.read()\n        noCount = \"\"\" SET NOCOUNT ON; \"\"\"\n        # print (noCount + script_data)\n        #cursor.execute(noCount + script_data)\n        cursor.execute(script_data)\n        logging.info(\" script: ${ops_var_script} executed\")\n    except pyodbc.Error as err:\n        logging.error('%s' % err)\n        exit(1)\n    except Exception as exception:\n        logging.error('%s' % exception)\n        exit(1)\n    # print result\n    if \"${ops_var_getoutput}\" == \"true\":\n        try:\n            row = cursor.fetchone()\n            while row is not None:\n                print(row)\n                row = cursor.fetchone()\n        except pyodbc.ProgrammingError as e:\n            logging.warning(\" No output message: \" + str(e))\n    # Close and delete cursor\n    cnxn.commit()\n    cursor.close()\n    # Close Connection\n    cnxn.close()\n\n\ndef execute_mysql_block():\n    try:\n        cnxn = pyodbc.connect(\"DRIVER={${ops_var_odbc_drivername}};\"\n                              \"SERVER=${ops_var_server};\"\n                              \"DATABASE=${ops_var_database};\"\n                              \"UID=${_credentialUser('${ops_var_credentials}')};\"\n                              \"PWD=${_credentialPwd('${ops_var_credentials}')};\"\n                              \"PORT=${ops_var_database_port};\"\n                              \"SslMode=none;\"\n                              )\n        cursor = cnxn.cursor()\n        script = open(r'''${_scriptPath('${ops_var_script}')}''', 'r')\n        script_data = script.read()\n        # noCount = \"\"\" SET NOCOUNT ON; \"\"\"\n        cursor.execute(script_data)\n        logging.info(\" script: ${ops_var_script} executed\")\n        cnxn.commit()\n    except pyodbc.Error as err:\n        logging.error('%s' % err)\n        exit(1)\n    except Exception as exception:\n        logging.error('%s' % exception)\n        exit(1)\n    # print result\n    if \"${ops_var_getoutput}\" == \"true\":\n        try:\n            row = cursor.fetchone()\n            while row is not None:\n                print(row)\n                row = cursor.fetchone()\n        except pyodbc.ProgrammingError as e:\n            logging.warning(\" No output message: \" + str(e))\n    # Close and delete cursor\n    cursor.close()\n    # Close Connection\n    cnxn.close()\n\n\ndef execute_postgresql_block():\n    try:\n        cnxn = pyodbc.connect(\"DRIVER={${ops_var_odbc_drivername}};\"\n                              \"SERVER=${ops_var_server};\"\n                              \"DATABASE=${ops_var_database};\"\n                              \"UID=${_credentialUser('${ops_var_credentials}')};\"\n                              \"PWD=${_credentialPwd('${ops_var_credentials}')};\"\n                              \"PORT=${ops_var_database_port};\")\n        cursor = cnxn.cursor()\n        script = open(r'''${_scriptPath('${ops_var_script}')}''', 'r')\n        script_data = script.read()\n        # noCount = \"\"\" SET NOCOUNT ON; \"\"\"\n        cursor.execute(script_data)\n        logging.info(\" script: ${ops_var_script} executed\")\n        cnxn.commit()\n    except pyodbc.Error as err:\n        logging.error('%s' % err)\n        exit(1)\n    except Exception as exception:\n        logging.error('%s' % exception)\n        exit(1)\n    # print result\n    if \"${ops_var_getoutput}\" == \"true\":\n        try:\n            row = cursor.fetchone()\n            while row is not None:\n                print(row)\n                row = cursor.fetchone()\n        except pyodbc.ProgrammingError as e:\n            logging.warning(\" No output message: \" + str(e))\n    # Close and delete cursor\n    cursor.close()\n    # Close Connection\n    cnxn.close()\n\n\ndef execute_sap_hana_block():\n    # Initialize your connection\n    conn = dbapi.connect(\n        address='${ops_var_server}',\n        port='${ops_var_database_port}',\n        user=\"${_credentialUser('${ops_var_credentials}')}\",\n        password=\"${_credentialPwd('${ops_var_credentials}')}\"\n    )\n    # If no errors, print connected\n    logging.info(f\"Connection Status is: {conn.isconnected()}\")\n    script = open(r'''${_scriptPath('${ops_var_script}')}''', 'r')\n    script_data = script.read()\n    cursor = conn.cursor()\n    # sql_command = \"SELECT * FROM SYS.RS_TABLES_;\"\n    try:\n        column_separator = str(${ops_var_colsep})\n    except TypeError:\n        column_separator = \",\"\n\n    cursor = conn.cursor()\n    # sql_command = \"SELECT * FROM SYS.RS_TABLES_;\"\n    try:\n        cursor.execute(script_data)\n        #for row in cursor:\n        #    print(row)\n    except Exception as exception:\n        logging.error(\"Error message: \" + str(exception))\n        exit(1)\n    try:\n        rows = cursor.fetchall()\n        for row in rows:\n            for i, col in enumerate(row):\n                # print (\"%s\" % col, end=\" \")\n                print(f\"{col}\", end=column_separator if i != len(row) - 1 else \"\")\n            print(\" \")\n    except Exception as exception:\n        logging.warning(\" No output message: \" + str(exception))\n    cursor.close()\n    conn.close()\n    pass\n\n\n# --\nif __name__ == '__main__':\n    main()\n",
+    "scriptUnix": "#!/opt/universal/python3.6/bin/python3\n# !/usr/bin/python\n###################################################\n#\n#    Name: ut_execute_dbscript.py\n#\n#    Purpose: execute an oracle, sqlserver db script\n#\n#\n#    Prerequisites:\n#     - Universal Agent for Windows/Linux\n#     - Python 3.7.x and higher\n#     - ODBC driver (https://docs.microsoft.com/de-de/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server?view=sql-server-2017)\n#     - yum -y install gcc gcc-c++ kernel-devel for pyodbc\n#     - requires on windows oracle instant client Version 18.3.0.0.0 http://www.oracle.com/technetwork/topics/winx64soft-089540.html\n#     - requires on windows Visual Studio VS 2013 https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads#bookmark-vs2013\n#     - check the odbc drivername in /etc/odbcinst.ini\n#     - Requires the Python modules via pip\n#     - pip install pyodbc\n#     - pip install datetime\n#     - pip install argparse\n#     - pip install logging\n#\n#     Version History:\n#\n#     1.0  Nils Buer    2018-09-05  initial version\n#     1.1  Nils Buer    2019-09-12  windows authentication added\n#     1.3  Nils Buer    2019-09-16  names for authentication adjusted\n#     1.4  Nils Buer    2019-09-17  SET NOCOUNT ON added\n#     1.5  A.Saglam     2020-05-18  Update for Oracle call, corrections, added mode\n#     1.6  A.Saglam     2020-05-19  Added commit call to oracle sql if no output\n#     1.7  A.Saglam     2020-10-23  activated Postgresql\n#     1.8   ASA NBU     2020-10-26  merged SAP HANA into here\n#     1.9   ASA NBU     2020-10-26  bugfix\n#     1.10  ASA NBU     2020-10-27  bugfix\n#     1.11  ASA NBU     2020-10-27  bugfix\n#     1.12  ASA NBU     2020-10-27  bugfix\n#     1.13  ASA NBU     2020-10-27  bugfix\n#     1.14  ASA NBU     2020-10-29  bugfix\n#     1.15  ASA NBU     2020-10-29  Mode added for function execute_oracle_block_plsql\n#     1.16  ASA NBU     2020-11-02  Authentication for oracle removed in choice\n#     1.17  ASA         2020-11-12  conditional import\n#     1.18  NBU         2020-12-18  SAP bugfix\n#     1.19  NBU, AS     2020-12-21  NO COUNT removed\n#     1.20  NBU         2021-01-11  debug print (noCount + script_data) outcommented\n#     1.21  NBU         2021-02-16  bugfix\n####################################################\nimport logging\nimport sys\n# import cx_Oracle\n# import pyodbc\n# from hdbcli import dbapi\n\ngl_version = \"1.21\"\ngl_variable_prefix = \"var\"\n#\n\n# -- logging settings DEBUG, INFO, WARNING, ERROR, CRITICAL\nlogging.basicConfig(level=\"${ops_var_loglevel}\",\n                    format=' %(asctime)s - %(levelname)s - %(message)s')\n\ndef global_imports():\n    if \"${ops_var_database_type}\" == \"oracle\":\n        global cx_Oracle\n        import cx_Oracle\n    elif \"${ops_var_database_type}\" in \"mysql,postgresql,sqlserver\":\n        global pyodbc\n        import pyodbc\n    elif \"${ops_var_database_type}\" == \"hana\":\n        global dbapi\n        from hdbcli import dbapi\n    pass\n\n# -- Main Logic Function\ndef main():\n    \"\"\"calls the required functions to run the stored procedures\"\"\"\n    global_imports()\n    print_variables()\n    stored_procedure_type()\n\n\ndef print_variables_x():\n    logging.info(\" Executing version \" + gl_version)\n    logging.info(\" Server: ${ops_var_server}\")\n    logging.info(\" database: ${ops_var_database}\")\n    logging.info(\n        \" database port e.g. 1521 oracle, 3306 mysql, 1433 mssql: ${ops_var_database_port}\")\n    # logging.info(\" username: ${_credentialUser('${ops_var_credentials}')}\")\n    # logging.info(\" password: ${_credentialPwd('${ops_var_credentials}')}\")\n    logging.info(\" odbc driver name: ${ops_var_odbc_drivername}\")\n    logging.info(\" schema: ${ops_var_schema}\")\n    logging.info(\" Output processing: ${ops_var_getoutput}\")\n    logging.info(\" Script to execute: ${ops_var_script}\")\n\n\ndef print_variables():\n    logging.info(\"Python version <<< \" + sys.version + \" >>>\")\n    logging.info(\"Executing task version \" + gl_version + \" with the following \"\n                                                          \"parameters\")\n    print_defined_variables(gl_variable_prefix)\n\n\ndef print_defined_variables(variable_prefix):\n    all_variables = r\"\"\"${_scope}\"\"\"\n    separate_variables = [variable for variable in all_variables.split(', ') if\n                          \"ops_\" + variable_prefix in variable]\n    logging.info(str(separate_variables).replace(\", \", \",\\n\"))\n\n\ndef stored_procedure_type():\n    logging.info(\" Connecting to ${ops_var_database_type} ...\")\n    if \"${ops_var_database_type}\" == \"oracle\":\n        if \"${ops_var_scripttype}\" == \"sqlscript\":\n            execute_oracle_block_sql()\n        elif \"${ops_var_scripttype}\" == \"plsqlblock\":\n            execute_oracle_block_plsql()\n        else:\n            logging.info(\"selections needs to be one of: sqlscript, plsqlblock\")\n            exit(1)\n    elif \"${ops_var_database_type}\" == \"mysql\":\n        execute_mysql_block()\n    elif \"${ops_var_database_type}\" == \"postgresql\":\n        execute_postgresql_block()\n    elif \"${ops_var_database_type}\" == \"sqlserver\":\n        execute_sqlserver_block()\n    elif \"${ops_var_database_type}\" == \"hana\":\n        execute_sap_hana_block()\n    else:\n        logging.error(\n            \"ERROR >>  database_type: ${ops_var_database_type} needs to be one of: oracle, mysql, sqlserver\")\n        exit(1)\n\n\ndef execute_oracle_block_plsql():\n    dsn_tns = cx_Oracle.makedsn('${ops_var_server}', '${ops_var_database_port}',\n                                service_name='${ops_var_database}')  # if needed, place an 'r' before any parameter in order to address any special character such as '\\'.\n    logging.info(\"DSN:: %s\", str(dsn_tns))\n    try:\n        connection_mode = int(${ops_var_connection_mode})\n    except TypeError:\n        connection_mode = 0\n    if not connection_mode:\n        cnxn = cx_Oracle.connect(\n            user=r\"${_credentialUser('${ops_var_credentials}')}\",\n            password=\"${_credentialPwd('${ops_var_credentials}')}\",\n            dsn=dsn_tns)  # if needed, place an 'r' before any parameter in order to address any special character such as '\\'. For example, if your user name contains '\\', you'll need to place 'r' before the user name: user=r'User Name'\n    else:\n        cnxn = cx_Oracle.connect(\n            user=r\"${_credentialUser('${ops_var_credentials}')}\",\n            password=\"${_credentialPwd('${ops_var_credentials}')}\",\n            dsn=dsn_tns,\n            mode=connection_mode)  # if needed, place an 'r' before any parameter in order to address any special character such as '\\'. For example, if your user name contains '\\', you'll need to place 'r' before the user name: user=r'User Name'\n    cursor = cnxn.cursor()\n    if \"${ops_var_getoutput}\" == \"true\":\n        cursor.callproc(\"dbms_output.enable\")\n    else:\n        logging.info(\" No output processing\")\n\n    script = open(r'''${_scriptPath('${ops_var_script}')}''', 'r')\n    script_data = script.read()\n\n    try:\n        cursor.execute(script_data)\n        logging.info(\" script: ${ops_var_script} executed\")\n    except cx_Oracle.DatabaseError as err:\n        logging.error('%s' % err)\n        exit(1)\n\n    if \"${ops_var_getoutput}\" == \"true\":\n        statusVar = cursor.var(cx_Oracle.NUMBER)\n        lineVar = cursor.var(cx_Oracle.STRING)\n        while True:\n            cursor.callproc(\"dbms_output.get_line\", (lineVar, statusVar))\n            if statusVar.getvalue() != 0:\n                break\n            print(lineVar.getvalue())\n\n    cursor.close()\n    cnxn.close()\n\n\ndef execute_oracle_block_sql():\n    try:\n        dsn_tns = cx_Oracle.makedsn('${ops_var_server}',\n                                    '${ops_var_database_port}',\n                                    service_name='${ops_var_database}')  # if needed, place an 'r' before any parameter in order to address any special character such as '\\'.\n        logging.info(\"DSN:: %s\", str(dsn_tns))\n        try:\n            connection_mode = int(${ops_var_connection_mode})\n        except TypeError:\n            connection_mode = 0\n        if not connection_mode:\n            cnxn = cx_Oracle.connect(\n                user=r\"${_credentialUser('${ops_var_credentials}')}\",\n                password=\"${_credentialPwd('${ops_var_credentials}')}\",\n                dsn=dsn_tns)  # if needed, place an 'r' before any parameter in order to address any special character such as '\\'. For example, if your user name contains '\\', you'll need to place 'r' before the user name: user=r'User Name'\n        else:\n            cnxn = cx_Oracle.connect(\n                user=r\"${_credentialUser('${ops_var_credentials}')}\",\n                password=\"${_credentialPwd('${ops_var_credentials}')}\",\n                dsn=dsn_tns,\n                mode=connection_mode)  # if needed, place an 'r' before any parameter in order to address any special character such as '\\'. For example, if your user name contains '\\', you'll need to place 'r' before the user name: user=r'User Name'\n        cursor = cnxn.cursor()\n        if \"${ops_var_getoutput}\" == \"true\":\n            cursor.callproc(\"dbms_output.enable\")\n        else:\n            logging.info(\" No output processing\")\n\n        script = open(r'''${_scriptPath('${ops_var_script}')}''', 'r')\n        script_data = script.read()\n    except Exception as exception:\n        logging.error('%s' % exception)\n        exit(1)\n\n    try:\n        cursor.execute(script_data)\n        logging.info(\" script: ${ops_var_script} executed\")\n    except cx_Oracle.DatabaseError as err:\n        logging.error('%s' % err)\n        exit(1)\n\n    # print result\n    if \"${ops_var_getoutput}\" == \"true\":\n        while True:\n            row = cursor.fetchone()\n            if not row:\n                break\n            print(row)\n    else:\n        logging.info(\" No output processing\")\n        cnxn.commit()\n    logging.info(\"After Output Processing\")\n    cursor.close()\n    cnxn.close()\n\n\ndef execute_sqlserver_block():\n    try:\n        if \"${ops_var_authentication}\" == \"windows\":\n            cnxn = pyodbc.connect(\n                'DRIVER={${ops_var_odbc_drivername}};'\n                'SERVER=${ops_var_server};'\n                'DATABASE=${ops_var_database};'\n                'trusted_connection=yes')\n        elif \"${ops_var_authentication}\" == \"sqlserver\":\n            cnxn = pyodbc.connect(\"DRIVER={${ops_var_odbc_drivername}};\"\n                                  \"SERVER=${ops_var_server};\"\n                                  \"DATABASE=${ops_var_database};\"\n                                  \"UID=${_credentialUser('${ops_var_credentials}')};\"\n                                  \"PWD=${_credentialPwd('${ops_var_credentials}')}\")\n\n\n        else:\n            logging.error(\n                \"ERROR >> authentication: needs to be one of: windows, sqlserver\")\n        cursor = cnxn.cursor()\n        script = open(r'''${_scriptPath('${ops_var_script}')}''', 'r')\n        script_data = script.read()\n        noCount = \"\"\" SET NOCOUNT ON; \"\"\"\n        # print (noCount + script_data)\n        #cursor.execute(noCount + script_data)\n        cursor.execute(script_data)\n        logging.info(\" script: ${ops_var_script} executed\")\n    except pyodbc.Error as err:\n        logging.error('%s' % err)\n        exit(1)\n    except Exception as exception:\n        logging.error('%s' % exception)\n        exit(1)\n    # print result\n    if \"${ops_var_getoutput}\" == \"true\":\n        try:\n            row = cursor.fetchone()\n            while row is not None:\n                print(row)\n                row = cursor.fetchone()\n        except pyodbc.ProgrammingError as e:\n            logging.warning(\" No output message: \" + str(e))\n    # Close and delete cursor\n    cnxn.commit()\n    cursor.close()\n    # Close Connection\n    cnxn.close()\n\n\ndef execute_mysql_block():\n    try:\n        cnxn = pyodbc.connect(\"DRIVER={${ops_var_odbc_drivername}};\"\n                              \"SERVER=${ops_var_server};\"\n                              \"DATABASE=${ops_var_database};\"\n                              \"UID=${_credentialUser('${ops_var_credentials}')};\"\n                              \"PWD=${_credentialPwd('${ops_var_credentials}')};\"\n                              \"PORT=${ops_var_database_port};\"\n                              \"SslMode=none;\"\n                              )\n        cursor = cnxn.cursor()\n        script = open(r'''${_scriptPath('${ops_var_script}')}''', 'r')\n        script_data = script.read()\n        # noCount = \"\"\" SET NOCOUNT ON; \"\"\"\n        cursor.execute(script_data)\n        logging.info(\" script: ${ops_var_script} executed\")\n        cnxn.commit()\n    except pyodbc.Error as err:\n        logging.error('%s' % err)\n        exit(1)\n    except Exception as exception:\n        logging.error('%s' % exception)\n        exit(1)\n    # print result\n    if \"${ops_var_getoutput}\" == \"true\":\n        try:\n            row = cursor.fetchone()\n            while row is not None:\n                print(row)\n                row = cursor.fetchone()\n        except pyodbc.ProgrammingError as e:\n            logging.warning(\" No output message: \" + str(e))\n    # Close and delete cursor\n    cursor.close()\n    # Close Connection\n    cnxn.close()\n\n\ndef execute_postgresql_block():\n    try:\n        cnxn = pyodbc.connect(\"DRIVER={${ops_var_odbc_drivername}};\"\n                              \"SERVER=${ops_var_server};\"\n                              \"DATABASE=${ops_var_database};\"\n                              \"UID=${_credentialUser('${ops_var_credentials}')};\"\n                              \"PWD=${_credentialPwd('${ops_var_credentials}')};\"\n                              \"PORT=${ops_var_database_port};\")\n        cursor = cnxn.cursor()\n        script = open(r'''${_scriptPath('${ops_var_script}')}''', 'r')\n        script_data = script.read()\n        # noCount = \"\"\" SET NOCOUNT ON; \"\"\"\n        cursor.execute(script_data)\n        logging.info(\" script: ${ops_var_script} executed\")\n        cnxn.commit()\n    except pyodbc.Error as err:\n        logging.error('%s' % err)\n        exit(1)\n    except Exception as exception:\n        logging.error('%s' % exception)\n        exit(1)\n    # print result\n    if \"${ops_var_getoutput}\" == \"true\":\n        try:\n            row = cursor.fetchone()\n            while row is not None:\n                print(row)\n                row = cursor.fetchone()\n        except pyodbc.ProgrammingError as e:\n            logging.warning(\" No output message: \" + str(e))\n    # Close and delete cursor\n    cursor.close()\n    # Close Connection\n    cnxn.close()\n\n\ndef execute_sap_hana_block():\n    # Initialize your connection\n    conn = dbapi.connect(\n        address='${ops_var_server}',\n        port='${ops_var_database_port}',\n        user=\"${_credentialUser('${ops_var_credentials}')}\",\n        password=\"${_credentialPwd('${ops_var_credentials}')}\"\n    )\n    # If no errors, print connected\n    logging.info(f\"Connection Status is: {conn.isconnected()}\")\n    script = open(r'''${_scriptPath('${ops_var_script}')}''', 'r')\n    script_data = script.read()\n    cursor = conn.cursor()\n    # sql_command = \"SELECT * FROM SYS.RS_TABLES_;\"\n    try:\n        column_separator = str(${ops_var_colsep})\n    except TypeError:\n        column_separator = \",\"\n\n    cursor = conn.cursor()\n    # sql_command = \"SELECT * FROM SYS.RS_TABLES_;\"\n    try:\n        cursor.execute(script_data)\n        #for row in cursor:\n        #    print(row)\n    except Exception as exception:\n        logging.error(\"Error message: \" + str(exception))\n        exit(1)\n    try:\n        rows = cursor.fetchall()\n        for row in rows:\n            for i, col in enumerate(row):\n                # print (\"%s\" % col, end=\" \")\n                print(f\"{col}\", end=column_separator if i != len(row) - 1 else \"\")\n            print(\" \")\n    except Exception as exception:\n        logging.warning(\" No output message: \" + str(exception))\n    cursor.close()\n    conn.close()\n    pass\n\n\n# --\nif __name__ == '__main__':\n    main()\n",
+    "scriptWindows": "#!/opt/universal/python3.6/bin/python3\n# !/usr/bin/python\n###################################################\n#\n#    Name: ut_execute_dbscript.py\n#\n#    Purpose: execute an oracle, sqlserver db script\n#\n#\n#    Prerequisites:\n#     - Universal Agent for Windows/Linux\n#     - Python 3.7.x and higher\n#     - ODBC driver (https://docs.microsoft.com/de-de/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server?view=sql-server-2017)\n#     - yum -y install gcc gcc-c++ kernel-devel for pyodbc\n#     - requires on windows oracle instant client Version 18.3.0.0.0 http://www.oracle.com/technetwork/topics/winx64soft-089540.html\n#     - requires on windows Visual Studio VS 2013 https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads#bookmark-vs2013\n#     - check the odbc drivername in /etc/odbcinst.ini\n#     - Requires the Python modules via pip\n#     - pip install pyodbc\n#     - pip install datetime\n#     - pip install argparse\n#     - pip install logging\n#\n#     Version History:\n#\n#     1.0  Nils Buer    2018-09-05  initial version\n#     1.1  Nils Buer    2019-09-12  windows authentication added\n#     1.3  Nils Buer    2019-09-16  names for authentication adjusted\n#     1.4  Nils Buer    2019-09-17  SET NOCOUNT ON added\n#     1.5  A.Saglam     2020-05-18  Update for Oracle call, corrections, added mode\n#     1.6  A.Saglam     2020-05-19  Added commit call to oracle sql if no output\n#     1.7  A.Saglam     2020-10-23  activated Postgresql\n#     1.8   ASA NBU     2020-10-26  merged SAP HANA into here\n#     1.9   ASA NBU     2020-10-26  bugfix\n#     1.10  ASA NBU     2020-10-27  bugfix\n#     1.11  ASA NBU     2020-10-27  bugfix\n#     1.12  ASA NBU     2020-10-27  bugfix\n#     1.13  ASA NBU     2020-10-27  bugfix\n#     1.14  ASA NBU     2020-10-29  bugfix\n#     1.15  ASA NBU     2020-10-29  Mode added for function execute_oracle_block_plsql\n#     1.16  ASA NBU     2020-11-02  Authentication for oracle removed in choice\n#     1.17  ASA         2020-11-12  conditional import\n#     1.18  NBU         2020-12-18  SAP bugfix\n#     1.19  NBU, AS     2020-12-21  NO COUNT removed\n#     1.20  NBU         2021-01-11  debug print (noCount + script_data) outcommented\n#     1.21  NBU         2021-02-16  bugfix\n####################################################\nimport logging\nimport sys\n# import cx_Oracle\n# import pyodbc\n# from hdbcli import dbapi\n\ngl_version = \"1.21\"\ngl_variable_prefix = \"var\"\n#\n\n# -- logging settings DEBUG, INFO, WARNING, ERROR, CRITICAL\nlogging.basicConfig(level=\"${ops_var_loglevel}\",\n                    format=' %(asctime)s - %(levelname)s - %(message)s')\n\ndef global_imports():\n    if \"${ops_var_database_type}\" == \"oracle\":\n        global cx_Oracle\n        import cx_Oracle\n    elif \"${ops_var_database_type}\" in \"mysql,postgresql,sqlserver\":\n        global pyodbc\n        import pyodbc\n    elif \"${ops_var_database_type}\" == \"hana\":\n        global dbapi\n        from hdbcli import dbapi\n    pass\n\n# -- Main Logic Function\ndef main():\n    \"\"\"calls the required functions to run the stored procedures\"\"\"\n    global_imports()\n    print_variables()\n    stored_procedure_type()\n\n\ndef print_variables_x():\n    logging.info(\" Executing version \" + gl_version)\n    logging.info(\" Server: ${ops_var_server}\")\n    logging.info(\" database: ${ops_var_database}\")\n    logging.info(\n        \" database port e.g. 1521 oracle, 3306 mysql, 1433 mssql: ${ops_var_database_port}\")\n    # logging.info(\" username: ${_credentialUser('${ops_var_credentials}')}\")\n    # logging.info(\" password: ${_credentialPwd('${ops_var_credentials}')}\")\n    logging.info(\" odbc driver name: ${ops_var_odbc_drivername}\")\n    logging.info(\" schema: ${ops_var_schema}\")\n    logging.info(\" Output processing: ${ops_var_getoutput}\")\n    logging.info(\" Script to execute: ${ops_var_script}\")\n\n\ndef print_variables():\n    logging.info(\"Python version <<< \" + sys.version + \" >>>\")\n    logging.info(\"Executing task version \" + gl_version + \" with the following \"\n                                                          \"parameters\")\n    print_defined_variables(gl_variable_prefix)\n\n\ndef print_defined_variables(variable_prefix):\n    all_variables = r\"\"\"${_scope}\"\"\"\n    separate_variables = [variable for variable in all_variables.split(', ') if\n                          \"ops_\" + variable_prefix in variable]\n    logging.info(str(separate_variables).replace(\", \", \",\\n\"))\n\n\ndef stored_procedure_type():\n    logging.info(\" Connecting to ${ops_var_database_type} ...\")\n    if \"${ops_var_database_type}\" == \"oracle\":\n        if \"${ops_var_scripttype}\" == \"sqlscript\":\n            execute_oracle_block_sql()\n        elif \"${ops_var_scripttype}\" == \"plsqlblock\":\n            execute_oracle_block_plsql()\n        else:\n            logging.info(\"selections needs to be one of: sqlscript, plsqlblock\")\n            exit(1)\n    elif \"${ops_var_database_type}\" == \"mysql\":\n        execute_mysql_block()\n    elif \"${ops_var_database_type}\" == \"postgresql\":\n        execute_postgresql_block()\n    elif \"${ops_var_database_type}\" == \"sqlserver\":\n        execute_sqlserver_block()\n    elif \"${ops_var_database_type}\" == \"hana\":\n        execute_sap_hana_block()\n    else:\n        logging.error(\n            \"ERROR >>  database_type: ${ops_var_database_type} needs to be one of: oracle, mysql, sqlserver\")\n        exit(1)\n\n\ndef execute_oracle_block_plsql():\n    dsn_tns = cx_Oracle.makedsn('${ops_var_server}', '${ops_var_database_port}',\n                                service_name='${ops_var_database}')  # if needed, place an 'r' before any parameter in order to address any special character such as '\\'.\n    logging.info(\"DSN:: %s\", str(dsn_tns))\n    try:\n        connection_mode = int(${ops_var_connection_mode})\n    except TypeError:\n        connection_mode = 0\n    if not connection_mode:\n        cnxn = cx_Oracle.connect(\n            user=r\"${_credentialUser('${ops_var_credentials}')}\",\n            password=\"${_credentialPwd('${ops_var_credentials}')}\",\n            dsn=dsn_tns)  # if needed, place an 'r' before any parameter in order to address any special character such as '\\'. For example, if your user name contains '\\', you'll need to place 'r' before the user name: user=r'User Name'\n    else:\n        cnxn = cx_Oracle.connect(\n            user=r\"${_credentialUser('${ops_var_credentials}')}\",\n            password=\"${_credentialPwd('${ops_var_credentials}')}\",\n            dsn=dsn_tns,\n            mode=connection_mode)  # if needed, place an 'r' before any parameter in order to address any special character such as '\\'. For example, if your user name contains '\\', you'll need to place 'r' before the user name: user=r'User Name'\n    cursor = cnxn.cursor()\n    if \"${ops_var_getoutput}\" == \"true\":\n        cursor.callproc(\"dbms_output.enable\")\n    else:\n        logging.info(\" No output processing\")\n\n    script = open(r'''${_scriptPath('${ops_var_script}')}''', 'r')\n    script_data = script.read()\n\n    try:\n        cursor.execute(script_data)\n        logging.info(\" script: ${ops_var_script} executed\")\n    except cx_Oracle.DatabaseError as err:\n        logging.error('%s' % err)\n        exit(1)\n\n    if \"${ops_var_getoutput}\" == \"true\":\n        statusVar = cursor.var(cx_Oracle.NUMBER)\n        lineVar = cursor.var(cx_Oracle.STRING)\n        while True:\n            cursor.callproc(\"dbms_output.get_line\", (lineVar, statusVar))\n            if statusVar.getvalue() != 0:\n                break\n            print(lineVar.getvalue())\n\n    cursor.close()\n    cnxn.close()\n\n\ndef execute_oracle_block_sql():\n    try:\n        dsn_tns = cx_Oracle.makedsn('${ops_var_server}',\n                                    '${ops_var_database_port}',\n                                    service_name='${ops_var_database}')  # if needed, place an 'r' before any parameter in order to address any special character such as '\\'.\n        logging.info(\"DSN:: %s\", str(dsn_tns))\n        try:\n            connection_mode = int(${ops_var_connection_mode})\n        except TypeError:\n            connection_mode = 0\n        if not connection_mode:\n            cnxn = cx_Oracle.connect(\n                user=r\"${_credentialUser('${ops_var_credentials}')}\",\n                password=\"${_credentialPwd('${ops_var_credentials}')}\",\n                dsn=dsn_tns)  # if needed, place an 'r' before any parameter in order to address any special character such as '\\'. For example, if your user name contains '\\', you'll need to place 'r' before the user name: user=r'User Name'\n        else:\n            cnxn = cx_Oracle.connect(\n                user=r\"${_credentialUser('${ops_var_credentials}')}\",\n                password=\"${_credentialPwd('${ops_var_credentials}')}\",\n                dsn=dsn_tns,\n                mode=connection_mode)  # if needed, place an 'r' before any parameter in order to address any special character such as '\\'. For example, if your user name contains '\\', you'll need to place 'r' before the user name: user=r'User Name'\n        cursor = cnxn.cursor()\n        if \"${ops_var_getoutput}\" == \"true\":\n            cursor.callproc(\"dbms_output.enable\")\n        else:\n            logging.info(\" No output processing\")\n\n        script = open(r'''${_scriptPath('${ops_var_script}')}''', 'r')\n        script_data = script.read()\n    except Exception as exception:\n        logging.error('%s' % exception)\n        exit(1)\n\n    try:\n        cursor.execute(script_data)\n        logging.info(\" script: ${ops_var_script} executed\")\n    except cx_Oracle.DatabaseError as err:\n        logging.error('%s' % err)\n        exit(1)\n\n    # print result\n    if \"${ops_var_getoutput}\" == \"true\":\n        while True:\n            row = cursor.fetchone()\n            if not row:\n                break\n            print(row)\n    else:\n        logging.info(\" No output processing\")\n        cnxn.commit()\n    logging.info(\"After Output Processing\")\n    cursor.close()\n    cnxn.close()\n\n\ndef execute_sqlserver_block():\n    try:\n        if \"${ops_var_authentication}\" == \"windows\":\n            cnxn = pyodbc.connect(\n                'DRIVER={${ops_var_odbc_drivername}};'\n                'SERVER=${ops_var_server};'\n                'DATABASE=${ops_var_database};'\n                'trusted_connection=yes')\n        elif \"${ops_var_authentication}\" == \"sqlserver\":\n            cnxn = pyodbc.connect(\"DRIVER={${ops_var_odbc_drivername}};\"\n                                  \"SERVER=${ops_var_server};\"\n                                  \"DATABASE=${ops_var_database};\"\n                                  \"UID=${_credentialUser('${ops_var_credentials}')};\"\n                                  \"PWD=${_credentialPwd('${ops_var_credentials}')}\")\n\n\n        else:\n            logging.error(\n                \"ERROR >> authentication: needs to be one of: windows, sqlserver\")\n        cursor = cnxn.cursor()\n        script = open(r'''${_scriptPath('${ops_var_script}')}''', 'r')\n        script_data = script.read()\n        noCount = \"\"\" SET NOCOUNT ON; \"\"\"\n        # print (noCount + script_data)\n        #cursor.execute(noCount + script_data)\n        cursor.execute(script_data)\n        logging.info(\" script: ${ops_var_script} executed\")\n    except pyodbc.Error as err:\n        logging.error('%s' % err)\n        exit(1)\n    except Exception as exception:\n        logging.error('%s' % exception)\n        exit(1)\n    # print result\n    if \"${ops_var_getoutput}\" == \"true\":\n        try:\n            row = cursor.fetchone()\n            while row is not None:\n                print(row)\n                row = cursor.fetchone()\n        except pyodbc.ProgrammingError as e:\n            logging.warning(\" No output message: \" + str(e))\n    # Close and delete cursor\n    cnxn.commit()\n    cursor.close()\n    # Close Connection\n    cnxn.close()\n\n\ndef execute_mysql_block():\n    try:\n        cnxn = pyodbc.connect(\"DRIVER={${ops_var_odbc_drivername}};\"\n                              \"SERVER=${ops_var_server};\"\n                              \"DATABASE=${ops_var_database};\"\n                              \"UID=${_credentialUser('${ops_var_credentials}')};\"\n                              \"PWD=${_credentialPwd('${ops_var_credentials}')};\"\n                              \"PORT=${ops_var_database_port};\"\n                              \"SslMode=none;\"\n                              )\n        cursor = cnxn.cursor()\n        script = open(r'''${_scriptPath('${ops_var_script}')}''', 'r')\n        script_data = script.read()\n        # noCount = \"\"\" SET NOCOUNT ON; \"\"\"\n        cursor.execute(script_data)\n        logging.info(\" script: ${ops_var_script} executed\")\n        cnxn.commit()\n    except pyodbc.Error as err:\n        logging.error('%s' % err)\n        exit(1)\n    except Exception as exception:\n        logging.error('%s' % exception)\n        exit(1)\n    # print result\n    if \"${ops_var_getoutput}\" == \"true\":\n        try:\n            row = cursor.fetchone()\n            while row is not None:\n                print(row)\n                row = cursor.fetchone()\n        except pyodbc.ProgrammingError as e:\n            logging.warning(\" No output message: \" + str(e))\n    # Close and delete cursor\n    cursor.close()\n    # Close Connection\n    cnxn.close()\n\n\ndef execute_postgresql_block():\n    try:\n        cnxn = pyodbc.connect(\"DRIVER={${ops_var_odbc_drivername}};\"\n                              \"SERVER=${ops_var_server};\"\n                              \"DATABASE=${ops_var_database};\"\n                              \"UID=${_credentialUser('${ops_var_credentials}')};\"\n                              \"PWD=${_credentialPwd('${ops_var_credentials}')};\"\n                              \"PORT=${ops_var_database_port};\")\n        cursor = cnxn.cursor()\n        script = open(r'''${_scriptPath('${ops_var_script}')}''', 'r')\n        script_data = script.read()\n        # noCount = \"\"\" SET NOCOUNT ON; \"\"\"\n        cursor.execute(script_data)\n        logging.info(\" script: ${ops_var_script} executed\")\n        cnxn.commit()\n    except pyodbc.Error as err:\n        logging.error('%s' % err)\n        exit(1)\n    except Exception as exception:\n        logging.error('%s' % exception)\n        exit(1)\n    # print result\n    if \"${ops_var_getoutput}\" == \"true\":\n        try:\n            row = cursor.fetchone()\n            while row is not None:\n                print(row)\n                row = cursor.fetchone()\n        except pyodbc.ProgrammingError as e:\n            logging.warning(\" No output message: \" + str(e))\n    # Close and delete cursor\n    cursor.close()\n    # Close Connection\n    cnxn.close()\n\n\ndef execute_sap_hana_block():\n    # Initialize your connection\n    conn = dbapi.connect(\n        address='${ops_var_server}',\n        port='${ops_var_database_port}',\n        user=\"${_credentialUser('${ops_var_credentials}')}\",\n        password=\"${_credentialPwd('${ops_var_credentials}')}\"\n    )\n    # If no errors, print connected\n    logging.info(f\"Connection Status is: {conn.isconnected()}\")\n    script = open(r'''${_scriptPath('${ops_var_script}')}''', 'r')\n    script_data = script.read()\n    cursor = conn.cursor()\n    # sql_command = \"SELECT * FROM SYS.RS_TABLES_;\"\n    try:\n        column_separator = str(${ops_var_colsep})\n    except TypeError:\n        column_separator = \",\"\n\n    cursor = conn.cursor()\n    # sql_command = \"SELECT * FROM SYS.RS_TABLES_;\"\n    try:\n        cursor.execute(script_data)\n        #for row in cursor:\n        #    print(row)\n    except Exception as exception:\n        logging.error(\"Error message: \" + str(exception))\n        exit(1)\n    try:\n        rows = cursor.fetchall()\n        for row in rows:\n            for i, col in enumerate(row):\n                # print (\"%s\" % col, end=\" \")\n                print(f\"{col}\", end=column_separator if i != len(row) - 1 else \"\")\n            print(\" \")\n    except Exception as exception:\n        logging.warning(\" No output message: \" + str(exception))\n    cursor.close()\n    conn.close()\n    pass\n\n\n# --\nif __name__ == '__main__':\n    main()\n",
     "sysId": "60ac23256cae44edb21ed0c6917071ed",
+    "templateType": "Script",
     "useCommonScript": false,
     "variablePrefix": "var",
     "waitForOutput": false
